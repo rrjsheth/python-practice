@@ -1,6 +1,5 @@
 #birthday problem
 
-#first there is just a mathematical implementation
 from random import randint
 
 DAYS_IN_YEAR = 365
@@ -29,7 +28,7 @@ for i in range(simulations):
         if sameBirthday[ classOne[index] ] == 1:
             sameTotal+=1    #increment if same birthday
             break
-        sameBirthday[ classOne[index] ] = 1
+        sameBirthday[ classOne[index] ] = 1 #atlease one person w/this birth
     #
 
     sameBirthday = list(clrArr) #reference a zero filled arr
